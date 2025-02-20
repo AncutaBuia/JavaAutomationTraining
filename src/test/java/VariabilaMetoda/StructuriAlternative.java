@@ -18,7 +18,7 @@ public class StructuriAlternative {
         metodaVerificareNrParPozitiv(-6);
         metodaVerificareNrParPozitiv(-9);
         metodaVerificareNrParPozitiv(0);
-
+        zileSaptamana(1);
 
     }
 
@@ -62,6 +62,26 @@ public class StructuriAlternative {
         else if (valoareNr == 0){
             System.out.println("Numarul " + valoareNr + "este 0");
 
+        }
+    }
+
+    //exemplu switch case
+    public void zileSaptamana(Integer zi)
+    {
+        switch (zi)
+        {
+            case 1:
+            case 2: //merge cases- daca avem 2 cazuri cu acelasi rezultat: facem merge
+                System.out.println("Azi e luni");
+                break;
+            case 3:
+                System.out.println("Azi e miercuri");
+                break; //ca sa se opreasca dupa ce se executa actiunea de la primul caz
+            case 4:
+                System.out.println("Azi e joi");
+                break;
+            default:  // cazuri netratate
+                System.out.println("Nu mai sunt zile");
         }
     }
 }

@@ -3,6 +3,10 @@ package VariabilaMetoda;
 import org.checkerframework.checker.units.qual.N;
 import org.testng.annotations.Test;
 
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Student {
     //Clasa = sablon care defineste proprietatile si comportamentul unei entitati specifice
 
@@ -62,6 +66,8 @@ public class Student {
 
         calculMedie();
         System.out.println(getSalariu()); //afisam rezulatul returnat de metoda getSalariu
+
+        citireNote();
     }
 
     public void calculMedie(){
@@ -79,4 +85,20 @@ public class Student {
             Integer salariu = 5000;
             return salariu;
         }
+
+        //STRUCTURI REPETITIVE:
+        //Afisam toate numerele de la 1-10: scenariu: verificam daca nr < 1 si >10
+        public void citireNote(){
+            //while
+            System.out.println("Introduceti nota");
+            Scanner scanner = new Scanner(System.in);
+            int nota = scanner.nextInt();
+            while(nota < 1 || nota > 10 ){
+                System.out.println("Nota " + nota + "trebuie sa fie intre 1 si 10");
+                nota = scanner.nextInt();
+            }
+            System.out.println("Nota " + nota + "este intre 1 si 10" );
+        }
+
+
 }
