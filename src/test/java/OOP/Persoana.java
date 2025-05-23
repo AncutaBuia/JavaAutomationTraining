@@ -43,7 +43,7 @@ public class Persoana {
         this.varsta = varsta;
     }
 
-    public void infoPersona()
+    protected void infoPersona()
     {
         System.out.println("Numele persoanei este: " + nume);
         System.out.println("Prenuumele persoanei este: " + prenume);

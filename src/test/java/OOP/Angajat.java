@@ -2,9 +2,17 @@ package OOP;
 
 import org.openqa.selenium.devtools.v85.network.model.InterceptionId;
 
+// Modificatori de acces:
+// public = codul se poate accesa de oriunde si de orice clasa
+// private = codul se poate accesa doar din clasa unde s-a scris codul
+// protected = codul se poate accesa doar din pachetul unde s-a scris codul dar si de subclase (conceptul oop molstenire)
+// default = codul se poate accesa doar din pachetul in care s-a scris codul; intra pe default daca nu se specific un modificator de acces
+
+
+
 public class Angajat extends Persoana implements AngajatInt{
 
-   private String firma;
+   protected String firma;
    private String experienta;
    private Integer zileConcediu;
 

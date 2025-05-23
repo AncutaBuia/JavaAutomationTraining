@@ -1,8 +1,6 @@
 package OOP;
 
-import javax.sound.midi.Soundbank;
-
-public class Student extends Persoana implements StudentInt{   //apelam mostenirea: extends Persona
+public class Student extends Persoana implements StudentInt {   //apelam mostenirea: extends Persona
 
     //definim informatiile care sa fie specifice studentluiui:
     private String facultate;
